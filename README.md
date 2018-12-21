@@ -1,6 +1,6 @@
 # 工具
 ```
-atom.io
+https://atom.io/
 
 # plugin (file -> setting -> package)
 autocomplete-python
