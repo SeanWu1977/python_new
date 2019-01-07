@@ -41,3 +41,18 @@ preference -> settings
 }
 
 ```
+
+# 安裝
+```
+### pip without ssl ###
+pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org <package name>
+pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org virtualenvs
+pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org django
+```
+
+# py to exe
+```
+pip install PyInstaller
+PyInstaller -F xxx.py
+```
+
