@@ -5,7 +5,8 @@ print("START")
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen(5)
-    # port 只是用來監听，並非傳資料，所以client連線後，會產生新的socket(conn)
+    # 此socket(s) 只用来授受新的连接请求
+    # 所以client連線後，會產生新的socket(conn)
     # 此時，server 與client就用此socket(conn)來傳送資料
     # 原本的socket(s)就可以在監听其它的
     conn, addr = s.accept()
