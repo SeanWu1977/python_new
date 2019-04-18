@@ -1,0 +1,14 @@
+import socket, time, datetime
+HOST = socket.gethostname() # Server IP/hostname
+PORT = 65432 # Server監听的端口
+# 設定socket類型
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+
+    # 此處socket並沒有bind,所以是由client自動配給一個port給此socket
+    # 當server接收到時，會在server上分派新的socket給此socket
+    s.connect((HOST, PORT))
+    s.sendall(b'Hello, world1')
+    data = s.recv(1024)
+    print('Received', repr(data))
+
+
