@@ -55,4 +55,7 @@ pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.pytho
 pip install PyInstaller
 PyInstaller -F xxx.py
 ```
-
+# sublime
+```
+TabNine 
+```
